@@ -1,0 +1,141 @@
+<div className='logo'>
+                <img src={logo} alt="logo-img"/>
+            </div>
+            <div className="links ">
+                <div className="myBooking linksclass">
+                    <div className="linksImg">
+                        <img src={myBooking} alt="myBooking-img"/>
+                    </div>
+                    
+                    <div className="linkstxt">
+                        <span>My Bookings</span>
+                    </div>
+                    
+                </div>
+                <div className="payRent linksclass">
+                    <div className="linksImg">
+                        <img src={payrent} alt="payRent-img"/>
+                    </div>
+                    <hr />
+                    <div className="linksTxt">
+                        <span>Pay Rent</span>
+                    </div>
+                    
+                </div>
+                <div className="nav-btn">
+                    <span>For Property Owners</span>
+                </div>
+                <div className="signup">
+                    <span>Sign Up</span>
+                </div>
+                <hr />
+                <div className="login">
+                    <span>Log In</span>
+                </div>
+                <hr />
+                <div className="menu linksclass">
+                    <div className="linksImg">
+                        <img src={menu} alt="menuimg"/>
+                    </div>
+                    <div className="linksTxt">
+                        <span>Menu</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.Nav{
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+    .logo{
+        img{
+            width: 90%;
+        }
+    }
+    .links{
+       align-items: center;
+       display: flex;
+       
+       div{
+            padding: 0px 0px 0px 0px;
+            margin: 0px;
+            font-size: 12px;
+            // border: 1px solid red;
+       }
+
+       
+        .linksclass{
+            display: flex;
+            flex-direction: row;
+        }
+        .linksImg{
+           padding-right: 4px;
+        }
+        hr{
+            color : rgb(189, 189, 189);
+            height: 20px;
+            align-items: center;
+            margin: 2px;
+            margin-right: 5px;
+            
+        }
+        .myBooking{
+            
+            border: 1px solid rgb(170, 166, 166);
+            padding: 0px 6px 0px 6px;
+            margin-right: 10px;
+            text-align: center;
+            line-height: 23px;
+            height: 27px;
+        }
+        .payRent{
+            .linksImg{
+                margin: 3px;
+            }
+            border: 1px solid rgb(170, 166, 166);
+            padding: 0px 6px 0px 6px;
+            margin-right: 10px;
+            text-align: center;
+            line-height: 23px;
+            height: 27px;
+            
+        }
+        .menu{
+            .linksImg{
+                margin-top: 3px;
+            }
+            padding: 2px 6px 0px 6px;
+            margin-right: 10px;
+            text-align: center;
+            line-height: 23px;
+            height: 27px;
+        }
+        .nav-btn{
+            padding: 0px 6px 0px 6px;
+            margin-right: 10px;
+            text-align: center;
+            line-height: 25px;
+            height: 27px;
+            background-color: rgb(33, 197, 148);
+            color: aliceblue;
+        }
+        .signup{
+            margin-right: 5px;
+        }
+        .login{
+            margin-right: 5px;
+            margin-left: 5px;
+        }
+    }
+}

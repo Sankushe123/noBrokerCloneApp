@@ -1,0 +1,96 @@
+.footer-container{
+    .footer-property{
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        height: 25vh;
+        align-items: center;
+        width: 100%;
+        background-color: rgb(235, 232, 232);
+        .left,.right{
+            width: 50%;
+           .footer-title{
+            display: block;
+            width: 90%;
+            
+            font-family: var(--lg-text);
+            h2{
+                font-size: 14px;
+                margin-bottom: 5px;
+            }
+            span{
+                font-size: 14px;
+                padding-bottom: 10px;
+
+            }
+            button{
+                margin-top: 15px;
+                padding: 6px 14px;
+                width: 110px;
+                outline: none;
+                background-color: rgb(83, 83, 83);
+                font-weight: 400;
+                border-radius: 2px;
+                border: none;
+                color: white;
+            }
+           }
+        }
+        hr{
+            width: .5px;
+            background-color: rgb(168, 168, 168);
+            border: none;
+            height: 14vh;
+        } 
+    }
+    .footer-link{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+        a{
+            font-family: var(--lg-text);
+            font-size: 18px;
+            text-decoration: none;
+            color: rgb(105, 104, 104);
+            padding: 1vh 2vh;
+            margin: 5px;
+        }  
+    }
+    .footer-link-img{
+        display: flex;
+        margin-top: 35px;
+        justify-content: center;
+        img{
+            width: 150px;
+            padding:10px;
+        }
+    }
+    .footer-social-link{
+        display: flex;
+        justify-content: center;
+        margin-top: 1vh;
+        span{
+            width: 40px;
+            height: 7vh;
+            background-color: rgb(231, 230, 230);
+            margin: 10px 20px 10px 20px ;
+            padding: 0 10px 0 10px ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+        }
+    }
+    .end{ 
+        display: flex;
+        justify-content: center;
+        margin-top: 2vh;
+        margin-bottom: 3vh;
+        span{
+            font-family: var(--lg-text);
+            font-size: 14px;
+        }
+         
+    }
+}

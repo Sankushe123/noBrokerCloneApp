@@ -1,0 +1,36 @@
+.css-b62m3t-container{
+    border-radius: 0px;
+    width: fit-content;
+    
+}
+.css-1n7boch-control{
+    display: flex;
+    height: 20px;
+    background-color: black;
+}
+.css-1nmdiq5-menu{
+    width: 100px;
+    border-radius:0px ;
+}
+
+.css-3w2yfm-ValueContainer{
+    margin-right: -1px;
+    border-radius:0px ;
+    display: flex;
+    height: 30px;
+    align-items: flex-start;
+    flex-direction: column;
+    overflow: scroll;
+    padding: 4px 0px;
+    position: relative;
+    box-sizing: border-box;
+   
+}
+// .css-3w2yfm-ValueContainer::-webkit-scrollbar{
+//     width: 0;
+// }
+.css-1fdsijx-ValueContainer::placeholder{
+    height: 30px;
+    margin-left: -50px;
+    overflow-x: auto;
+}

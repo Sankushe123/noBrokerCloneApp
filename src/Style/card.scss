@@ -1,0 +1,62 @@
+.card-container{
+    // width: 300px;
+    // height: 30vh;
+    // margin: 0 10px 0 10px;
+    // background-color: rgb(255, 255, 255);
+    // white-space: wrap;
+    // overflow: scroll;
+
+    height:30vh;
+    max-width: 350px;
+    padding: .2rem;
+    margin: 1rem;
+    border: 0;
+    flex-basis: 33.333%;
+    flex-grow: 0;
+    background-color: white;
+    flex-shrink: 0;
+    overflow-y: auto;
+    border-radius: 5px;
+    
+    .person-intro{
+        display: flex;
+        padding: 10px 0 5px 10px;
+        text-align: center;
+       
+        
+        .person-img{
+            margin: 10px;
+            img{
+                width: 40px;
+                height: 40px;
+            }
+        }
+        .person-name{
+            margin-top: 10px;
+            margin-left: 10px;
+            h2{
+                font-size: 14px;
+                font-family: var(--sm-text);
+            }
+            .rating{
+                text-align: left;
+            }
+        }
+    }
+    .person-comment{
+        text-align: left;
+        margin-left: 20px;
+        
+        span{
+            font-size: 16px;
+            font-family: var(--lg-text);
+            font-weight: bold;
+        }
+        p{
+            margin-top: 10px;
+            width: 320px;
+            
+        }
+    }
+}
+

@@ -1,23 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState,useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import { BrowserRouter as Router , Routes, Route } from "react-router-dom";
+import NavbarComp from "./Component/NavbarComp";
+import Header from "./Component/Header"
+import './Style/navbarComp.scss';
+import './Style/header.scss'
+import Dropdown from "./Component/Dropdown";
+import Searchcomponent from "./Component/Searchcomponent";
+import Post from "./Component/Postad/Post";
+import Dashboard from "./Component/Dashboard/Dashboard";
+import Registration from "./Component/LoginRegistration/Registration/Registration";
+
 
 function App() {
+  const [islogged,setIslogged] = useState(false);
+  useEffect(() => {
+    if ('token' in localStorage) {
+      setIslogged(true);
+    } else {
+      setIslogged(false);
+    }
+  },)
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <NavbarComp/>
+        <Routes>
+          <Route path="/" element={<Header/>}/>
+          <Route path="/search" element={<Searchcomponent/>}/>
+          
+          {console.log(islogged)}
+           {islogged ?
+            <>
+              <Route path="/post" element={<Post/>}/>
+              <Route path="/dashboard" element={<Dashboard/>}/>
+            </>:
+              
+              <Route element={<h1>Login first</h1>}/>
+            }
+        </Routes>
+      </Router>
     </div>
   );
 }

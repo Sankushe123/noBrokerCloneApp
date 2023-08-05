@@ -1,0 +1,211 @@
+.body{
+    background-color: #F2F2F2;
+    padding-top: 10vh;
+    .postcontainer{
+        background-color: #fff;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        h4{
+          font-family: var(--lg-text);
+          font-size: 16px;
+          font-weight: bolder;
+          color: var(--pik-btn); 
+          margin-bottom: 10px;  
+          margin-top: 10px; 
+          letter-spacing: 1px; 
+        }
+        h5{
+            font-family: var(--md-text);
+            font-size: 13px;
+            font-weight: 400;
+        }
+        .property_details{
+            width: 100%;
+            padding: 20px;
+            padding-bottom: 10px;
+            .pdContainer{
+                width: 100%;
+               display: flex;
+               flex-wrap: wrap;
+               .pd{
+                width: 50%;
+               }
+               .pdex{
+                input{
+                    width: 50vh;
+                    height: 6vh;
+                    padding-left: 5px;
+                    background-color: #fff;
+                    font-size: 16px;
+                    outline: none;
+                    border: none;
+                    border: 1px solid rgb(102, 102, 102);
+                }
+               }
+            } 
+        }
+        .Address_details{
+            width: 100%;
+            padding: 20px;
+            padding-top: 0;
+           
+            .ld{
+                width: 50%;
+                input{
+                    width: 50vh;
+                    height: 6vh;
+                    background-color: #fff;
+                    font-size: 16px;
+                    outline: none;
+                    border: none;
+                    border: 1px solid rgb(102, 102, 102);
+                }
+            }
+            .ldContainer{
+                flex-wrap: wrap;
+                display: flex;
+            }
+        }
+        .rentalDetails{
+            width: 100%;
+            padding: 20px;
+            padding-top: 0;
+           .rdContainer{
+            display: flex;
+            flex-wrap: wrap;
+            .rdyear{
+                .selector{
+                    select{
+                        width: 35vh;
+                        outline: none;
+                        height: 5vh;
+                        font-size: 16px;
+                    }
+                    
+                }
+            }
+            .rd4{
+                padding-top: 10px;
+            }
+            .rd1,.rd2,.rd3,.rd4{
+                width: 50;
+                padding-right: 20px;
+            }
+            .rd5{
+                width: 50;
+                padding-right: 20px;
+                padding-top: 15px;
+                label{
+                    margin-left: 10px;
+                }
+            }
+            .radiobtn{
+                display:flex;
+                margin: 5px 0 5px 0; 
+                div{
+                    padding-right: 10px;
+                    input{
+                        margin-right: 10px;
+                    }
+                }
+            }
+           }
+           .rd2,.rd3{
+            
+            margin-left: 10vh;
+                div{
+                    border: 1px solid rgb(102, 102, 102);
+                    height: 5vh;
+                    width: 40vh;
+                    span{
+                        padding-left: 5px;
+                    }
+                    input{
+                        width: 27vh;
+                        height: 5vh;
+
+                        margin-left: 5px;
+                        background-color: transparent;
+                        font-size: 16px;
+                        outline: none;
+                        border: none;
+                        
+                    }
+                }
+            }
+            .rd4{
+                input{
+                    margin-right: 10px;
+
+                }
+            }
+        }
+        .amenities{
+            width: 100%;
+            padding: 20px;
+            padding-top: 0;
+            .ameunities-top{
+                display: flex;
+                .ad{
+                    width: 50%;
+                    input{
+                        width: 35vh;
+                        height: 6vh;
+                        padding-left: 5px;
+                        background-color: transparent;
+                        font-size: 16px;
+                        outline: none;
+                        border: 1px solid rgb(102, 102, 102);
+                    }
+                }
+            }
+            .ameunities-bottom{
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                
+                div{
+                    padding: 10px;
+                    width: 30vh;
+                    
+                    margin: 5px 10px 5px 10px;
+                    input{
+                        margin-right: 10px;
+                    }
+                    label{
+                        font-size: 18px;
+                    }
+                }
+            }
+            
+        }
+        .uploadimg{
+            width: 100%;
+            padding: 20px;
+            padding-top: 0;
+            .uploadimg-container{
+                
+            }
+        }
+        .submitbtn{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 5vh;
+            button{
+                padding: 1.5vh 6vh;
+                background-color:  #1c8f72;
+                border: .5px solid gray;
+                color: #fff;
+                font-size: 16px;
+                font-weight: 500;
+                font-family: var(--lg-text);
+                
+            }:hover{
+                background-color: #01a37b;
+                cursor: pointer;
+            }
+        }
+    }
+}

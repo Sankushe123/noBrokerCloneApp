@@ -1,0 +1,85 @@
+@import url(../Style/fontcolor.scss);
+.counter{
+    margin-top: 30px;
+    .counter-heading{
+        h2{
+            font-size: 30px;
+            display: flex;
+            width: 100%;
+            font-weight: 400;
+            font-family: var(--lg-text);
+            color: rgb(94, 92, 92);
+            text-align: center;
+           
+          }
+          
+          ::before{
+            content: "";
+            width: 38%;
+            height: 1px;
+            background-color: rgb(94, 92, 92);
+            margin-top: 5px;
+            margin-left: 0px;
+            margin-right: 17px;
+            transform: translateY(13px);
+            display: block;
+            
+          }
+          ::after{
+            content: "";
+            width: 37%;
+            height: 1px;
+            background-color: rgb(94, 92, 92);
+            margin-top: 5px;
+            margin-left: 0px;
+            transform: translate(20px,13px);
+            margin-right: 0px;
+          }
+    }
+}    
+.counter-item{
+    width: 30%;
+    margin-top: 10vh;
+    display: inline-block;
+    justify-content: space-evenly;
+    height: 40vh;
+    padding-top: 10px;
+    .counter-box{
+        background-color: var(--pik-btn);
+        width: 28vh;
+        height: 28vh;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 0 auto;
+       
+        .counter-inner-txt{
+            background-color: white;
+            width: 27vh;
+            height: 27vh;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 0 auto;
+            h2{
+                font-size: 34px;
+                color: var(--pik-btn);
+                
+            }
+        }
+    }
+    .counter-txt{
+        text-align: center;
+        margin-top: 3vh;
+        h4{
+            font-size: 20px;
+            font-weight: 400;
+            color: rgb(94, 92, 92);
+            font-family: var(--lg-text);
+        }
+    }
+
+    
+}

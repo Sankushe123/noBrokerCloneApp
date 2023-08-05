@@ -1,0 +1,282 @@
+.signup{
+    width: 100%;
+    min-height: 120vh;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 999999;
+    position: fixed;
+    .signupcontainer{
+        background-color: rgb(255, 255, 255);
+        width: 48%;
+        height: 86vh;
+        margin: 7vh auto 7vh auto;
+        vertical-align: middle;
+        display: flex;
+       
+        .signupLeft{
+            background-color: #F8F8F8;
+            width: 40%;
+            display: flex;
+            
+            .leftContainer{
+                transform: translateY(20vh);
+                margin-left: 4vh;
+                img{
+                    width: 15vh;
+                    height: 15vh;
+                }
+                h3{
+                    font-size: 15px;
+                    letter-spacing: .5px;
+                    font-weight: 600;
+                    font-family: var(--lg-text);
+                }
+                ul{
+                    margin-top: 10px;
+                    li{
+                        margin-top: 7px;
+                        list-style-type: none;
+                        font-size: 13px;
+                        font-weight: 500;
+                        font-family: var(--lg-text);
+                    }
+                }
+
+            }
+        }
+        .signupRight{
+            background-color:#fff;
+            width: 60%;
+
+            .righttop{
+                margin-left: 7vh;
+                height: 75vh;
+                padding-top: 3vh;
+               
+                .crossbtn{
+                    float: right;
+                    margin: 1vh 5vh 0 0;
+                    cursor: pointer;
+                }
+                h3{
+                    color: #ff1231;
+                    font-size: 1.4rem;
+                    letter-spacing: 2px;
+                    font-family: var(--lg-text);
+                }
+                .form{
+                    margin-top: 3vh;
+                    width: 100%;
+                    input[type="text"],
+                    input[type="numeric"],
+                    input[type="password"],
+                    textarea {
+                        width: 76%;
+                        height: 5.5vh;
+                        border: 1px solid rgb(211, 211, 211);
+                        border-radius: 3px;
+                        margin: 10px;
+                        padding-left: 5px;
+                        margin-top: 5px;
+                        cursor: pointer;
+                        margin-left: 0;
+                        outline: none; 
+                    }   
+                }
+                .signupBtn:disabled,
+                .signupBtn[disabled]{
+                    background-color: #ff1232ce ;
+                    color: #fff;
+                    cursor: no-drop;
+                }
+                .signupBtn{    
+                    padding: 1.3vh 6vh 1.3vh 6vh;
+                    background-color:  #ff1231;
+                    color: #fff;
+                    letter-spacing: .5px;
+                    border: none;
+                    font-size: 14px;
+                    font-weight: bolder;
+                    margin-top: 3vh;
+                    cursor: pointer;
+                    border-radius: 3px;
+                }
+                .signin{
+                    margin-top: 3vh;
+                    font-size: 14px;
+                    font-family: var(--lg-text);
+                    .signin-btn{
+                       button{
+                        margin-top: 1vh;
+                        padding: .8vh 3vh;
+                        background-color:#0A66C2;
+                        color: #fff;
+                        font-size: 14px;
+                        border-radius: 3px;
+                        border: none;
+                        cursor: pointer;
+                       }
+                        
+                    }
+                }
+            }
+            .instructions {
+                font-size: 0.6rem;
+                
+                font-weight: 700;
+                padding: 0.25rem;
+                font-family: var(--sm-text);
+                position: relative;
+                bottom: 10px;
+                width: 76%;
+            }
+            
+            .instructions > svg {
+                margin-right: 0.25rem;
+            }
+            
+            .offscreen {
+                position: absolute;
+                left: -9999px;
+            }
+            // .righttop{
+              
+            //     
+            //     .crossbtn{
+            //     float: right;
+            //     margin: 1vh 5vh 0 0;
+            //         cursor: pointer;
+            //     }
+            // .inputinfo{
+            //         margin:4vh auto 0 auto;
+            //         .err{
+            //             margin-left: 7vh;
+            //             margin-top: 10px;
+            //             font-size: 12px;
+            //             font-family: var(--lg-text);
+            //             color:var(--pik-btn);
+            //             margin-bottom: -10px;
+            //         }
+            //         h2{
+            //             margin-left: 7vh;
+            //             font-size: 20px;
+            //             font-family: var(--lg-text);
+            //             letter-spacing: 2px;
+            //         }
+            //         .rightTop{
+            //             margin-top: 2vh;
+            //             input[type="text"],
+            //             input[type="password"],button,
+            //             textarea{
+            //                 width: 76%;
+            //                 height: 5.5vh;
+            //                 border: 1px solid rgb(211, 211, 211);
+            //                 border-radius: 3px;
+            //                 margin: 10px;
+            //                 margin-top: 5px;
+            //                 margin-left: 7vh;
+            //                 padding-left: 7px;
+            //             }
+            //         }
+            //         .inputph{
+            //             margin: 10px;
+            //             margin-left: 7vh;
+            //             input{
+            //                 margin-left:0px;
+            //             }
+            //         }
+            //         .instructions {
+            //             font-size: 0.75rem;
+            //             border-radius: 0.5rem;
+            //             background: #000;
+            //             color: #fff;
+            //             padding: 0.25rem;
+            //             position: relative;
+            //             bottom: -10px;
+            //             width: 76%;
+            //         }
+            //         .instructions > svg {
+            //             margin-right: 0.25rem;
+            //         }
+                    
+            //         .offscreen {
+            //             position: absolute;
+            //             left: -9999px;
+            //         }
+            //         .otpContainer{
+            //             margin-top: 3vh;
+            //             margin-left: 7vh;
+            //             .otpbtnbox{
+            //                 display:flex;
+            //                 width: 85%;
+            //                 height: 5vh;
+                            
+            //                 justify-content: space-between;
+            //                 span{
+            //                     font-size: 12px;
+            //                     font-family: var(--lg-text);
+            //                     margin-bottom: 2vh;
+            //                     font-weight: 400;
+
+            //                 }
+            //                 .otp-box{
+            //                     margin-top: 1.5vh;
+            //                 }
+            //                 .verifybtn{
+            //                     margin-top:1.5vh;
+            //                     display: flex;
+            //                     border: 1px solid rgb(185, 185, 185);
+            //                     padding: 1vh 3vh 1vh 3vh;
+            //                     align-items: center;
+            //                     justify-content: center;
+            //                     border-radius: 3px;
+            //                     height: 5.3vh;
+            //                     font-size: 14px;
+            //                     cursor: pointer;
+            //                     .verity{
+            //                         margin-top: 13px;
+            //                         font-size: 14px;
+            //                         font-weight: 500;
+            //                         font-family: var(--lg-text);
+            //                     }
+            //                 }
+                        
+            //             }
+                    
+            //         }
+            //         .continueBtn{
+            //             margin:4vh 0 0 7vh ;
+                        
+            //             .continue{
+            //                 padding: 1.5vh 6vh 1.5vh 6vh;
+            //                 background-color:  #ff1231;
+            //                 color: #fff;
+            //                 letter-spacing: .5px;
+            //                 border: none;
+            //                 font-size: 14px;
+            //                 font-weight: bolder;
+            //                 border-radius: 3px;
+            //             }:hover{
+            //                 background-color: #ff1938dc;
+            //             }
+
+            //         }
+            //     }
+                
+            // }    
+        }
+        .tc{
+            margin-left: 7vh;
+            margin-top: 4vh;
+            p{
+                font-size: 11px;
+                font-family: var(--lg-text);
+                span{
+                    font-size: 11.2px;
+                    font-family: var(--lg-text);
+                    font-weight: bolder;
+                    letter-spacing: .5px;
+                }
+            }
+        }
+    }
+}

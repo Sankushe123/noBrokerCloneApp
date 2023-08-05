@@ -1,0 +1,110 @@
+.filterContainer{
+    background-color: rgb(245, 241, 241);
+    width: 95%;
+    height: 450px;
+    margin-top: 2vh;
+    margin-left: 4%;
+   
+    padding: 15px;
+    .heading{
+        text-align: center;
+        h2{
+            font-family: var(--lg-text);
+            font-size: 20px;
+            padding-bottom: 10px;
+            letter-spacing: 1px;
+            color: var(--pik-btn)
+        }
+    }
+    h3{
+        font-size: 14px;
+        font-family: var(--lg-text);
+        margin-bottom: 3vh;
+        font-weight: 600;
+        color: rgb(36, 36, 36);
+    }
+    input:checked{
+        accent-color: var(--gr-btn);  
+    }
+    .fbitem{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: rgb(94, 94, 94);
+        button{
+            padding: 1.5vh 3vh;
+            margin: 2px;
+            background-color: rgb(253, 253, 253);
+            border: none;
+            color: rgb(94, 94, 94);
+            border-radius: 2px;
+            font-size: 12px;
+        }:active{
+            background-color: aqua;
+        }
+        
+    }
+    .fbtypecheck{
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+        font-family: var(--lg-text);
+        font-size: 15px;
+        font-weight: 500;
+        color: rgb(94, 94, 94);
+    }
+    .prizeSlider{
+        width: 95%;
+        margin-bottom: 4vh;
+        margin-top: 4vh;
+        color: rgb(94, 94, 94);
+        .slider{
+            width: 100%;
+            height: 5px;
+            background-color: var(--gr-btn);
+    
+            .thumb{
+                width: 20px;
+                background-color: aliceblue;
+                height: 20px;
+                border-radius:50%;
+                cursor: pointer;
+                outline: none;
+                border: 2px solid var(--gr-btn);
+                transform: translateY(-7px);
+            }
+        }
+    }
+    .propertyStatus{
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        color: rgb(94, 94, 94);
+        font-size: 15px;
+        font-family: var(--lg-text);
+        div{
+            input{
+                margin-right: 5px;
+            }
+            label{
+                margin-right: 10px;
+            }
+        }
+    }
+    .Furnishing{
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        font-family: var(--lg-text);
+        font-size: 15px;
+        color: rgb(94, 94, 94);
+        div{
+            display: flex;
+            margin-right: 3vh;
+           
+            input{
+                margin-right: 5px;
+            }
+            label{
+                margin-right: 10px;
+            }
+        }
+    }
+    
+}

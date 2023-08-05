@@ -1,0 +1,16 @@
+
+.cardbox-item{
+    width: 85%;
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    margin-top: 5vh;
+    scroll-padding: 10px;
+    margin: 0 auto 0 auto;
+    
+}
+::-webkit-scrollbar{
+    display: none;
+    
+}
