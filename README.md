@@ -26,17 +26,10 @@ This is a full-stack web application for property renting, built using the MERN 
 3. Install dependencies for the frontend and backend:
    - Frontend: `cd client && npm install`
    - Backend: `cd server && npm install`
-4. Create a `.env` file in the `server` directory and add your MongoDB connection string and Cloudinary API credentials:
-   ```env
-   MONGODB_URI=your-mongodb-connection-string
-   CLOUDINARY_CLOUD_NAME=your-cloudinary-cloud-name
-   CLOUDINARY_API_KEY=your-cloudinary-api-key
-   CLOUDINARY_API_SECRET=your-cloudinary-api-secret
-   ```
-5. Start the frontend and backend servers:
+4. Start the frontend and backend servers:
    - Frontend: `cd client && npm start`
    - Backend: `cd server && npm start`
-6. Open your browser and navigate to `http://localhost:3000` to access the application.
+5. Open your browser and navigate to `http://localhost:3000` to access the application.
 
 ## Screenshots
 
